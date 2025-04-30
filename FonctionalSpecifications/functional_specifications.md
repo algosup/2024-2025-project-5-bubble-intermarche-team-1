@@ -11,7 +11,7 @@
 |       Date       |    Description    |
 | ---------------- | ----------------- |
 |    28/04/2024    | Creation of the document |
-|    28/04/2024    | Started filling section  |
+|    30/04/2024    | Started filling section  |
 
 ---
 
