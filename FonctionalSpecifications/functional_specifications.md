@@ -10,8 +10,9 @@
 
 |       Date       |    Description    |
 | ---------------- | ----------------- |
-|    28/04/2024    | Creation of the document |
-|    30/04/2024    | Started filling section  |
+|    28/04/2025    | Creation of the document |
+|    30/04/2025    | Started filling section  |
+|    05/05/2025    | Added stackholder & success criteria |
 
 ---
 
@@ -58,17 +59,13 @@
   - [7.1 Navigation Flow](#7-1-navigation-flow)  
   - [7.2 Wireframe References](#7-2-wireframe-references)  
 
-- [8. Data Considerations](#8-data-considerations)  
-  - [8.1 High-Level Data Entities](#8-1-high-level-data-entities)  
-  - [8.2 Privacy & Security Considerations](#8-2-privacy--security-considerations)  
+- [8. Privacy & Security Considerations](#8-privacy--security-considerations)
 
 - [9. Business Rules](#9-business-rules)  
 
 - [10. Non-Functional Considerations](#10-non-functional-considerations)  
   - [10.1 Performance Expectations](#10-1-performance-expectations)  
   - [10.2 Compliance & Regulations](#10-2-compliance--regulations)  
-
-- [11. Glossary](#11-glossary)  
 
 </details>
 
@@ -94,7 +91,14 @@ Covers all in-scope features including product lookup, recommendations, bilingua
 
 ### 1.4 Stakeholders
 
--
+| Name              | Fonction          |
+| ----------------- | ----------------- |
+| Yann-Maël BOUTON  | Program Manager   |
+| Geoffrey DELRIEU  | Project Manager   |
+| Loïc NOGUES       | Technical Lead    |
+| Alexis SANTOS     | Software Engineer |
+| Salaheddine NAMIR | Quality Insurance |
+| Michel RIFF       | Technical Writer  |
 
 ## 2. Business Context
 
@@ -108,7 +112,8 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 ### 2.3 Success Criteria
 
--
+- 20% uplift in average cart size from wine/cheese sections
+- Positive user satisfaction feedback ≥4/5
 
 ## 3. Functional Scope
 
@@ -159,15 +164,27 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 #### 5.2.1 Actors
 
+ -
+
 #### 5.2.2 Preconditions
+
+ -
 
 #### 5.2.3 Trigger
 
+ -
+
 #### 5.2.4 Main Flow
+
+ -
 
 #### 5.2.5 Alternate Flows
 
+ -
+
 #### 5.2.6 Postconditions
+
+ -
 
 ## 6. Functional Requirements
 
@@ -191,3 +208,30 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
  -
 
+## 7. User Interface Overview
+
+### 7.1 Navigation Flow
+
+ -
+
+### 7.2 Wireframe References
+
+ -
+
+## 8. Privacy & Security Considerations
+
+ -
+
+## 9. Business Rules
+
+ -
+
+## 10. Non-Functional Considerations
+
+### 10.1 Performance Expectations
+
+ -
+
+### 10.2 Compliance & Regulations
+
+ -
