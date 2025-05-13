@@ -13,7 +13,8 @@
 |    28/04/2025    | Creation of the document |
 |    30/04/2025    | Started filling section  |
 |    05/05/2025    | Added stackholder & success criteria |
-|    11/05/2025    | completed the all document (only mockup need to be finished) |
+|    11/05/2025    | Completed the entire document (only mockup need to be finished) |
+|    13/05/2025    | Rework and enhance some part |
 
 ---
 
@@ -24,8 +25,8 @@
   - [1.1 Purpose](#1-1-purpose)  
   - [1.2 Scope of Functional Specifications](#1-2-scope-of-functional-specifications)  
   - [1.3 Definitions & Acronyms](#1-3-definitions--acronyms)  
-  - [1.4 Stakeholders](#1-4-stakeholders)  
-  - [1.5 References](#1-5-references)  
+  - [1.4 Team Members](#1-4-team-members) 
+  - [1.5 Stakeholders](#1-5-stakeholders)  
 
 - [2. Business Context](#2-business-context)  
   - [2.1 Problem Statement](#2-1-problem-statement)  
@@ -78,22 +79,28 @@ Covers all in-scope features including product lookup, recommendations, bilingua
 
 ### 1.3 Definitions & Acronyms
 
-  - PWA: Progressive Web App
-  - QR: Quick Response
-  - EAN: European Article Number (barcode standard)
-  - ITM8: Intermarché internal barcode prefix
-  - Slack: Team collaboration platform
+| Abbreviation | Meaning                                    |
+| ------------ | ------------------------------------------ |
+| PWA          | Progressive Web App                        |
+| QR           | Quick Response                             |
+| EAN          | European Article Number (barcode standard) |
+| ITM8         | Intermarché internal barcode prefix        |
+| Slack        | Team collaboration platform                |
 
-### 1.4 Stakeholders
 
-| Name              | Fonction          |
-| ----------------- | ----------------- |
-| Yann-Maël BOUTON  | Program Manager   |
-| Geoffrey DELRIEU  | Project Manager   |
-| Loïc NOGUES       | Technical Lead    |
-| Alexis SANTOS     | Software Engineer |
-| Salaheddine NAMIR | Quality Insurance |
-| Michel RIFF       | Technical Writer  |
+### 1.5 Team Members
+
+| Name              | Function          | Their Github        | Their LinkedIn |
+| ----------------- | ----------------- | ------------------- | -------------- |
+| Yann-Maël BOUTON  | Program Manager   | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/devnjoyer) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ym-bouton-a38565339) |
+| Geoffrey DELRIEU  | Project Manager   | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Z2VvZ2Vv) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/geoffrey-delrieu-77203a353/) |
+| Loïc NOGUES       | Technical Lead    | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Loic-nogues) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/loic-nogues-459606339/) |
+| Alexis SANTOS     | Software Engineer | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Mamoru-fr) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexis-santos-83481031b/) |
+| Salaheddine NAMIR | Quality Insurance | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/T3rryc) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/salaheddine-namir-3402471b8/) |
+| Michel RIFF       | Technical Writer  | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/MichelRiff) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michel-riff-693007293/) |
+
+### 1.5 Stakeholders
+
 | Franck JEANNIN    | Supervisor        |
 | Intermarché       | Client            |
 
@@ -160,52 +167,53 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 ### 5.2 Detailed Use Cases
 
 UC1: Access App
-- Actors: Guest Shopper, Logged-in Shopper
-- Preconditions: User is in-store and scans the QR code displayed in the wine or cheese aisle.
-- Main Flow:
 
-  1. User scans QR code with his smartphone, tablet, mobile phone or any other device.
-  2. PWA loads and shows a language selector (FR/EN).
-  3. User selects preferred language.
-  4. The system queries whether the user already has a session token.
-     1. In case a token exists, then the execution goes on to step 7.
+- **Actors**: Guest Shopper, Logged-in Shopper
+- **Preconditions**: User is in-store and scans the QR code displayed in the wine or cheese aisle.
+- **Main Flow**:
 
-  5. User is asked to complete a quick preference quiz (optional on first visit).
-  6. User may enter email/SMS to receive a magic link for login (optional).
-  7. System displays the personalized home screen with product recommendations and catalog access.
+  **1.** User scans QR code with his smartphone, tablet, mobile phone or any other device.
+  **2.** PWA loads and shows a language selector (FR/EN).
+  **3.** User selects preferred language.
+  **4.** The system queries whether the user already has a session token.
+     **1.** In case a token exists, then the execution goes on to step 7.
 
-- Alternative Flows:
-  A1: User skips quiz and magic link entry → System proceeds with default recommendations in guest mode.
-- Postconditions: App home screen is rendered with appropriate navigation and recommendations.
+  **5.** User is asked to complete a quick preference quiz (optional on first visit).
+  **6.** User may enter email/SMS to receive a magic link for login (optional).
+  **7.** System displays the personalized home screen with product recommendations and catalog access.
+
+- **Alternative Flows**:
+  **A1**: User skips quiz and magic link entry → System proceeds with default recommendations in guest mode.
+- **Postconditions**: App home screen is rendered with appropriate navigation and recommendations.
 
 UC2: View Product Details
 
-- Actors: Guest Shopper, Logged-in Shopper
-- Preconditions: User has successfully accessed the app (UC1 completed).
-- Main Flow:
+- **Actors**: Guest Shopper, Logged-in Shopper
+- **Preconditions**: User has successfully accessed the app (UC1 completed).
+- **Main Flow**:
 
-  1. User navigates using search, filters.
-  2. User choose a product from the results list.
-  3. The system shows the product's details page with the following information:
+  **1.** User navigates using search, filters.
+  **2.** User choose a product from the results list.
+  **3.** The system shows the product's details page with the following information:
 
      - Clear, large images
      - Product name, origin, and description
      - Recommended pairings (wine with cheese and vice versa)
 
-  4. The user can move back for browsing or select other products for viewing.
+  **4.** The user can move back for browsing or select other products for viewing.
 
-- Alternative Flows:
-  A1: After a user makes a search, and the system does not bring up any results → The system shows 'No matches found' and recommends that the user clears the filters or uses other keywords.
-- Postconditions: User has watched detailed info as well as pairing suggestions.
+- **Alternative Flows**:
+  **A1**: After a user makes a search, and the system does not bring up any results → The system shows 'No matches found' and recommends that the user clears the filters or uses other keywords.
+- **Postconditions**: User has watched detailed info as well as pairing suggestions.
 
 UC3: Get Personalized Recommendations
 
-- Actors: Guest Shopper, Logged-in Shopper
-- Preconditions: User is on home or product listing screen and either first-time user or chooses to update preferences.
-- Main Flow:
+- **Actors**: Guest Shopper, Logged-in Shopper
+- **Preconditions**: User is on home or product listing screen and either first-time user or chooses to update preferences.
+- **Main Flow**:
 
-  1. User taps the "Preferences" icon/button.
-  2. System presents up to 5 questions on styles and preferences.
+  **1.** User taps the "Preferences" icon/button.
+  **2.** System presents up to 5 questions on styles and preferences.
 
     - Preferred wine types (e.g.: red, white)
     - Style preferences (e.g.: full-body, crisp)
@@ -213,49 +221,49 @@ UC3: Get Personalized Recommendations
     - Milk type (e.g.: cow, goat, sheep)
     - Intensity/strength
 
-  3. User answers the questions, system applies the logic of skipping on the basis of responses of questions.
-  4. System recalculates and displays new recommendations.
+  **3.** User answers the questions, system applies the logic of skipping on the basis of responses of questions.
+  **4.** System recalculates and displays new recommendations.
 
-- Alternative Flows:
-  A1: User quits quiz midway → System keeps previous / default preference set and updates only based on completed answers.
-- Postconditions: The Recommendations given have to match the user's explicitly stated preferences.
+- **Alternative Flows**:
+  **A1**: User quits quiz midway → System keeps previous / default preference set and updates only based on completed answers.
+- **Postconditions**: The Recommendations given have to match the user's explicitly stated preferences.
 
 UC4: Save Session & Prompt Registration
 
-- Actors: Guest Shopper
-- Preconditions: The current user has at least interacted with five products during the ongoing session.
-- Main Flow:
+- **Actors**: Guest Shopper
+- **Preconditions**: The current user has at least interacted with five products during the ongoing session.
+- **Main Flow**:
 
-  1. The system track the user's contacts with the products (views, filters applied, quiz participation).
-  2. After the fifth interaction, the system gives a one-time registration prompt.
-  3. The prompt is telling about the benefits of saving preferences and order history.
-  4. User types his email or phone number.
-  5. System forwards a magic link for authentication.
-  6. User clicks on the magic link and gets logged in.
+  **1.** The system track the user's contacts with the products (views, filters applied, quiz participation).
+  **2.** After the fifth interaction, the system gives a one-time registration prompt.
+  **3.** The prompt is telling about the benefits of saving preferences and order history.
+  **4.** User types his email or phone number.
+  **5.** System forwards a magic link for authentication.
+  **6.** User clicks on the magic link and gets logged in.
 
-- Alternative Flows:
-  A1: User says no to registration → The system remains in guest mode and reprompts the user again only once per session.
-- Postconditions: Registered users have their sessions stored after visits and can store their favorite products and preferences.
+- **Alternative Flows**:
+  **A1**: User says no to registration → The system remains in guest mode and reprompts the user again only once per session.
+- **Postconditions**: Registered users have their sessions stored after visits and can store their favorite products and preferences.
 
 UC5: Scan Product Barcode
 
-- Actors: Guest Shopper, Logged-in Shopper
-- Preconditions: User is in possession of a physical product with a scannable barcode and is on either the home or the catalog screen.
-- Main Flow:
+- **Actors**: Guest Shopper, Logged-in Shopper
+- **Preconditions**: User is in possession of a physical product with a scannable barcode and is on either the home or the catalog screen.
+- **Main Flow**:
 
-  1. User click on the barcode scanner icon/button.
-  2. System turns on the device camera to do the barcode scan.
-  3. User positions the barcode in the camera frame.
-  4. System reads the barcode and looks for the product in database.
-     1. If the product is found, system redirects user to the product detail page (per UC2 flow).
+  **1.** User click on the barcode scanner icon/button.
+  **2.** System turns on the device camera to do the barcode scan.
+  **3.** User positions the barcode in the camera frame.
+  **4.** System reads the barcode and looks for the product in database.
+     **1.** If the product is found, system redirects user to the product detail page (per UC2 flow).
 
-  5. User checks the product detail page or goes back to the scanner.
+  **5.** User checks the product detail page or goes back to the scanner.
 
-- Alternative Flows:
-  A1: User cancels scan → The system stops the camera and the user is directed to the previous screen.
-  A2: Camera access denied → The system shows the permission error and prompts the user to do a manual search.
-  A3: Barcode not recognized → The system displays the message 'Product not found' with an option to go to the catalog.
-- Postconditions: Product detail page is shown if the product was found, otherwise, the user is still on the scanning interface with an error message.
+- **Alternative Flows**:
+  **A1**: User cancels scan → The system stops the camera and the user is directed to the previous screen.
+  **A2**: Camera access denied → The system shows the permission error and prompts the user to do a manual search.
+  **A3**: Barcode not recognized → The system displays the message 'Product not found' with an option to go to the catalog.
+- **Postconditions**: Product detail page is shown if the product was found, otherwise, the user is still on the scanning interface with an error message.
 
 ## 6. Functional Requirements
 
@@ -263,13 +271,13 @@ UC5: Scan Product Barcode
 
 | ID   | Feature                                        | Priority |
 |------|------------------------------------------------|----------|
-| FR1  | QR-code scan entry point                       | Must     |
-| FR2  | Barcode/EAN camera scanner                     | Could    |
-| FR3  | Product detail page                            | Must     |
-| FR6  | Multilingual support                           | Must     |
-| FR7  | Offline caching of top-100                     | Should   |
-| FR8  | Personalization filters                        | Must     |
-| FR9  | Personalized User Experiences (Question List)  | Must     |
+| **FR1**  | QR-code scan entry point                       | Must     |
+| **FR2**  | Barcode/EAN camera scanner                     | Could    |
+| **FR3**  | Product detail page                            | Must     |
+| **FR4**  | Multilingual support                           | Must     |
+| **FR5**  | Offline caching of top-100                     | Should   |
+| **FR6**  | Personalization filters                        | Must     |
+| **FR7**  | Personalized User Experiences (Question List)  | Must     |
 
 ## 7. Wireframe References
 
