@@ -175,10 +175,9 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 ___
 
-#### Persona 3: Jean the Enthusiast (Power User)
+#### Persona 2: Claire the Local Foodie (Logged-In Shopper)
 
 <div align="center">
-Persona 2: Claire the Local Foodie (Logged-In Shopper)
 <img src="./img/persona/persona_2.png" width=250px>
 </div>
 
