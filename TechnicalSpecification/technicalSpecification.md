@@ -20,8 +20,7 @@
       - [4.2.2 Dynamic Interface](#422-dynamic-interface)
     - [4.3 Scan](#43-scan)
     - [4.4 Superlink](#44-superlink)
-      - [4.4.1 Why This Matters](#441-why-this-matters)
-      - [4.4.2How It Works](#442how-it-works)
+      - [4.4.1 How It Works](#441-how-it-works)
   - [5.DataBase](#5database)
     - [5.1 Product](#51-product)
       - [5.1.1 Data Management Of Products](#511-data-management-of-products)
@@ -72,26 +71,26 @@ The style we will use are mainly the __red__,__black__ and __white__.
 Because they are the main colors of the intermarché logo and theme.
 ## 4.Features 
 ### 4.1 Language Selection
-You will be able to choose between __French__ and __English__
+You will be able to choose between __French__ and __English__. We will use the __Option Set__ to translate into __English__ and __French__.
 
 ### 4.2 Personalized Interface
 #### 4.2.1 Preferences of users
 There will be a total of 3 to 5 questions about what the customer likes about wine tastes, cheese texture etc. The user have the prossibilty to skip those questions if he want to directly access the web app. The answer will be saved in the local data.
-Also the questions will be like a popup when you first open the web app
+Also there will be a next and previous button and a skip button if you don't want to respond to the questions.
 #### 4.2.2 Dynamic Interface
-The web app will give the user an __unique interface__ based on the local data of the user. Each web app interface will be different if the answers are not the same.
+The web app will give the user an __unique interface__ based on the local data of the user. Each web app interface will be different if the answers are not the same. In the __HomePage__ the preferences will be based on the previous questions the user answered 
 
 ### 4.3 Scan
-You will be able to scan the barcode of the product. The web app will shows the description and recommend other merchandise that is good with the scanned product. To make it work, we will use a pluging called __BarCode Scanner__ that we can add on Bubble
+You will be able to scan the barcode of the product. The web app will shows the description and recommend other merchandise that is good with the scanned product. To make it work, we will use a pluging called __BarCode Scanner__ that we can add on Bubble.
+
+To add a plugin you will have on left tab in the __Edit-Mode__. Click and just search the plugin that you want. When you will find the plugins wanted just click on it and click on __add__. 
+The plugin will be added.
 
 ### 4.4 Superlink
 To allow occasional follow-up, promotions, or sending pairing guides via email, we’re adding a __Magic Link__ system. This feature lets users input their name and email or phone number, and receive a personal link to revisit their wine/cheese suggestions or pairing history.
 
-#### 4.4.1 Why This Matters
-It avoids logins or account creation — frictionless and GDPR-conscious.Also it re-engages interested customers with minimal tech. This can be used in future campaigns, especially during wine & cheese events.
-
-#### 4.4.2How It Works
-User browses the app normally. At any point, they can tap “Save and Send Link”, after a short form appears to collect name and contact (email or phone). Bubble generates a unique URL tied to their browsing session or preferences. Finnaly this link is sent to them automatically. When they reopen it, their saved pairings are restored instantly.
+#### 4.4.1 How It Works
+User browses the app normally. At any point, they can tap “Save and Send Link”, after a short form appears to collect name and contact (email). Bubble generates a unique URL tied to their browsing session or preferences. Finnaly this link is sent to them automatically. When they reopen it, their saved pairings are restored instantly.
 
 ## 5.DataBase
 ### 5.1 Product
