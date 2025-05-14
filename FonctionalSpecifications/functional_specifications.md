@@ -105,6 +105,8 @@ Covers all in-scope features including product lookup, recommendations, bilingua
 | [Geoffrey DELRIEU](https://www.linkedin.com/in/geoffrey-delrieu-77203a353/) | [Team 1](https://github.com/algosup/2024-2025-project-5-bubble-intermarche-team-1) (Project Owner) |
 | [Yann-Maël BOUTON](https://www.linkedin.com/in/ym-bouton-a38565339) | [Team 1](https://github.com/algosup/2024-2025-project-5-bubble-intermarche-team-1) (Project Representative) |
 
+___
+
 ## 2. Business Context
 
 ### 2.1 Problem Statement
@@ -119,6 +121,8 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 - 20% uplift in average cart size from wine/cheese sections
 - Positive user satisfaction feedback ≥4/5
+
+___
 
 ## 3. Functional Scope
 
@@ -139,6 +143,8 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
   - Native app (available on play store and apple store) / Shortcut app.
   - Integration beyond top-100 product.
 
+___
+
 ## 4. User Roles & Permissions
 
 ### 4.1 User Roles
@@ -154,6 +160,8 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 | Shopper     | ✔️            | ✔️           | ✔️            | ✖️                 | ✖️                 | ✖️                   |
 | Shopper LI  | ✖️            | ✖️           | ✖️            | ✔️                 | ✔️                 | ✔️                   |
 | Store Staff | ✖️            | ✖️           | ✖️            | ✔️                 | ✖️                 | ✖️                   |
+
+___
 
 ## 5. Use Cases & Audience
 
@@ -204,6 +212,8 @@ ___
 **Goals**: Dive deep into origin, style and intensity data compare products and save favorites for future visits.
 
 **Frustrations**: Slow or inaccurate barcode scans and limited filtering options or lack of high-resolution images.
+
+___
 
 ### 5.2 Detailed Use Cases
 
@@ -313,6 +323,7 @@ ___
   **A2**: Camera access denied → The system shows the permission error and prompts the user to do a manual search.
   **A3**: Barcode not recognized → The system displays the message 'Product not found' with an option to go to the catalog.
 - **Postconditions**: Product detail page is shown if the product was found, otherwise, the user is still on the scanning interface with an error message.
+___
 
 ## 6. Functional Requirements
 
@@ -327,6 +338,8 @@ ___
 | **FR5**  | Offline caching of top-100                     | Should   |
 | **FR6**  | Personalization filters                        | Must     |
 | **FR7**  | Personalized User Experiences (Question List)  | Must     |
+
+___
 
 ## 7. Wireframe
 
@@ -395,6 +408,8 @@ ___
 
 A password-less sign-in form: enter your email and tap **Get Magic Link**. You’ll receive a one-time link to authenticate instantly, enabling you to save preferences, session history, and favorites.
 
+___
+
 ## 8. High-level database architecture
 
   **Option Sets:**
@@ -447,6 +462,8 @@ A password-less sign-in form: enter your email and tap **Get Magic Link**. You�
   |                    | Scores                  | list of number                     |
   |                    | GeneratedAt             | date                               |
 
+___
+
 ## 9. Privacy & Security Considerations
 
 - HTTPS/TLS for all requests and responses
@@ -454,11 +471,15 @@ A password-less sign-in form: enter your email and tap **Get Magic Link**. You�
 - Send out limited-time-use magic-link tokens that are secure and which can only be used once
 - Allow access to the system only for users who have the relevant role and make sure that each input is valid
 
+___
+
 ## 10. Business Rules
 
 - Our only concern is the wine and cheese.
 - Personalization updates only after user interaction (quiz, click, like)
 - Always honor the users selected language for UI and content
+
+___
 
 ## 11. Non-Functional Considerations
 
