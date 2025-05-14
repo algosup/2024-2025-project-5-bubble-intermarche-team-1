@@ -1,4 +1,4 @@
-# Fonctional Specifications - Intermarché WEB APP
+# Functional Specifications - Intermarché Web App
 
 ## Author
 
@@ -6,15 +6,16 @@
 | ---------------- | ---------------- |
 | Yann-Maël Bouton | Program Manager  |
 
-## Modification
+## Modifications
 
 |       Date       |    Description    |
 | ---------------- | ----------------- |
 |    28/04/2025    | Creation of the document |
 |    30/04/2025    | Started filling section  |
-|    05/05/2025    | Added stackholder & success criteria |
+|    05/05/2025    | Added stakeholder & success criteria. |
 |    11/05/2025    | Completed the entire document (only mockup need to be finished) |
-|    13/05/2025    | Rework and enhance some part |
+|    13/05/2025    | Reworked and enhanced several parts. |
+|    14/05/2025    | Final version (waiting for QA verification) |
 
 ---
 
@@ -41,17 +42,14 @@
   - [4.1 User Roles](#4-1-user-roles)  
   - [4.2 Permission Matrix](#4-2-permission-matrix)  
 
-- [5. Use Cases & User Stories](#5-use-cases--user-stories)  
-  - [5.1 Use Case List](#5-1-use-case-list)  
+- [5. Use Cases & Audience](#5-use-cases--audience)  
+  - [5.1 Audience](#5-1-audience)  
   - [5.2 Detailed Use Cases](#5-2-detailed-use-cases)
 
 - [6. Functional Requirements](#6-functional-requirements)  
-  - [6.1 Overview & Prioritization](#6-1-overview--prioritization)  
-  - [6.2 Module A: Feature Name](#6-2-module-a-feature-name)  
-  - [6.3 Module B: Feature Name](#6-3-module-b-feature-name)  
-  - [6.4 Traceability Matrix](#6-4-traceability-matrix)  
+  - [6.1 Overview & Prioritization](#6-1-overview--prioritization)   
 
-- [7. Wireframe References](#7-wireframe-references)  
+- [7. Wireframe](#7-wireframe)  
 
 - [8. High-level database architecture](#8-high-level-database-architecture)  
 
@@ -85,30 +83,33 @@ Covers all in-scope features including product lookup, recommendations, bilingua
 | QR           | Quick Response                             |
 | EAN          | European Article Number (barcode standard) |
 | ITM8         | Intermarché internal barcode prefix        |
-| Slack        | Team collaboration platform                |
 
 
-### 1.5 Team Members
+### 1.4 Team Members
 
-| Name              | Function          | Their Github        | Their LinkedIn |
-| ----------------- | ----------------- | ------------------- | -------------- |
-| Yann-Maël BOUTON  | Program Manager   | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/devnjoyer) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ym-bouton-a38565339) |
-| Geoffrey DELRIEU  | Project Manager   | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Z2VvZ2Vv) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/geoffrey-delrieu-77203a353/) |
-| Loïc NOGUES       | Technical Lead    | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Loic-nogues) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/loic-nogues-459606339/) |
-| Alexis SANTOS     | Software Engineer | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Mamoru-fr) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexis-santos-83481031b/) |
-| Salaheddine NAMIR | Quality Insurance | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/T3rryc) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/salaheddine-namir-3402471b8/) |
-| Michel RIFF       | Technical Writer  | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/MichelRiff) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/michel-riff-693007293/) |
+| Name              | Function          | Role Description                                                                                                    | Their Github                                                                                                                     | Their LinkedIn                                                                                                                                                   |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Yann-Maël BOUTON  | Program Manager   | Oversees program strategy, coordinates the projects and stakeholders to align with business objectives.        | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/devnjoyer)   | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/ym-bouton-a38565339)          |
+| Geoffrey DELRIEU  | Project Manager   | Plans and tracks project timelines, resources, and deliverables to ensure on-time, on-budget completion.            | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Z2VvZ2Vv)    | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/geoffrey-delrieu-77203a353/)  |
+| Loïc NOGUES       | Technical Lead    | Guides the technical vision, mentors engineers, and ensures architectural integrity.                                | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Loic-nogues) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/loic-nogues-459606339/)       |
+| Alexis SANTOS     | Software Engineer | Designs, writes, tests, and maintains code to implement features and fix bugs.                                      | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/Mamoru-fr)   | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/alexis-santos-83481031b/)     |
+| Salaheddine NAMIR | Quality Insurance | Defines testing strategy, executes QA processes and ensures the product meets quality standards.                    | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/T3rryc)      | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/salaheddine-namir-3402471b8/) |
+| Michel RIFF       | Technical Writer  | Creates and maintains clear, user-friendly documentation and guides for both technical and non-technical audiences. | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat\&logo=github\&logoColor=white)](https://github.com/MichelRiff)  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/michel-riff-693007293/)       |
 
 ### 1.5 Stakeholders
 
-| Franck JEANNIN    | Supervisor        |
-| Intermarché       | Client            |
+| Representative      | Entity           |
+| ----------------- | ----------------- |
+| [Franck JEANNIN](https://fr.linkedin.com/in/franck-jeannin) | [ALGOSUP](https://www.algosup.com/) (Supervisor) |
+| [Chrys CADEAU](chryscadeau13@gmail.com) & [Célia MOUSTIER](moustier09@hotmail.fr) | [Intermarché](https://www.intermarche.com/) (Project Owner) |
+| [Geoffrey DELRIEU](https://www.linkedin.com/in/geoffrey-delrieu-77203a353/) | [Team 1](https://github.com/algosup/2024-2025-project-5-bubble-intermarche-team-1) (Project Owner) |
+| [Yann-Maël BOUTON](https://www.linkedin.com/in/ym-bouton-a38565339) | [Team 1](https://github.com/algosup/2024-2025-project-5-bubble-intermarche-team-1) (Project Representative) |
 
 ## 2. Business Context
 
 ### 2.1 Problem Statement
 
-Tourists in the wine & cheese aisles quick product information and pairing guidance, leading to decision delays and missed upsell opportunities.
+Tourists in the wine & cheese aisles lack quick product information and pairing guidance, leading to decision delays and missed upsell opportunities.
 
 ### 2.2 Objectives & Goals
 
@@ -123,14 +124,14 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 #### In-Scope Features
 
-  - Personalized user experiences (UI/UX) throught question list.
+  - Personalized user experiences (UI/UX) through question list.
   - Display high resolution product images.
-  - Hidden feedback to enhance recommandation.
+  - Hidden feedback to enhance recommendation.
   - Recommended pairings and recipe suggestions.
   - Bilingual UI (minimum language : EN and FR).
   - Search engine for product.
-  - User authentification throught SMS/EMAIL magic link.
-  - Barcode/EAN scanning via device camera that will redirect on the page of the product.
+  - User authentication through SMS/EMAIL magic link.
+  - Barcode/EAN scanning via device camera that will redirect to the product page.
 
 #### Out-Scope Features
 
@@ -154,19 +155,56 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 | Shopper LI  | ✖️            | ✖️           | ✖️            | ✔️                 | ✔️                 | ✔️                   |
 | Store Staff | ✖️            | ✖️           | ✖️            | ✔️                 | ✖️                 | ✖️                   |
 
-## 5. Use Cases & User Stories
+## 5. Use Cases & Audience
 
-### 5.1 Use Case List
+### 5.1 Audience
 
-  - access app: Scan store QR code → Select language → (Optional) Login → Complete preference quiz → Browse recommendations.
-  - view product: Search or browse list → Select item → View images, description, pairings.
-  - personalize: Answer up to 5 quick preference questions (wine type, style, cheese texture, milk type, strength).
-  - save session: After 5 interactions, prompt magic-link registration for enhanced personalization.
-  - barcode scanner: Scan product barcode -> redirect on product page.
+<div align="center" style="font-weight: bold; margin-bottom: 20px;">
+Persona 1: Sam the Tourist (Guest Shopper)
+<img src="./img/persona/persona_1.png" width=250px>
+</div>
+
+**Age & Background**: 29-year-old English-speaking tourist, first time in France.
+
+**Tech Proficiency**: Comfortable with smartphones, but unlikely to install or register.
+
+**Goals**: Instantly access bilingual product info via QR code and get quick pairing suggestions without logging in.
+
+**Frustrations**: Any delay in loading or having to create an account and overly complex navigation in a foreign language
+
+___
+
+<div align="center" style="font-weight: bold; margin-bottom: 20px;">
+Persona 2: Claire the Local Foodie (Logged-In Shopper)
+<img src="./img/persona/persona_2.png" width=250px>
+</div>
+
+**Age & Background**: 35-year-old Paris resident, regularly shops at Intermarché.
+
+**Tech Proficiency**: Moderate, uses mobile apps for shopping and recipes.
+
+**Goals**: Save her taste preferences and order history and receive personalized wine-and-cheese recommendations based on past likes.
+
+**Frustrations**: Losing her session or preferences if she’s not logged in and generic suggestions that don’t match her known tastes.
+
+___
+
+<div align="center" style="font-weight: bold; margin-bottom: 20px;">
+Persona 3: Jean the Enthusiast (Power User)
+<img src="./img/persona/persona_3.png" width=250px>
+</div>
+
+**Age & Background**: 50-year-old wine connoisseur, avid label-scanner
+
+**Tech Proficiency**: High; uses advanced filters and barcode / EAN scanning frequently
+
+**Goals**: Dive deep into origin, style and intensity data compare products and save favorites for future visits.
+
+**Frustrations**: Slow or inaccurate barcode scans and limited filtering options or lack of high-resolution images.
 
 ### 5.2 Detailed Use Cases
 
-UC1: Access App
+#### UC1: Access App
 
 - **Actors**: Guest Shopper, Logged-in Shopper
 - **Preconditions**: User is in-store and scans the QR code displayed in the wine or cheese aisle.
@@ -186,7 +224,9 @@ UC1: Access App
   **A1**: User skips quiz and magic link entry → System proceeds with default recommendations in guest mode.
 - **Postconditions**: App home screen is rendered with appropriate navigation and recommendations.
 
-UC2: View Product Details
+___
+
+#### UC2: View Product Details
 
 - **Actors**: Guest Shopper, Logged-in Shopper
 - **Preconditions**: User has successfully accessed the app (UC1 completed).
@@ -206,7 +246,9 @@ UC2: View Product Details
   **A1**: After a user makes a search, and the system does not bring up any results → The system shows 'No matches found' and recommends that the user clears the filters or uses other keywords.
 - **Postconditions**: User has watched detailed info as well as pairing suggestions.
 
-UC3: Get Personalized Recommendations
+___
+
+#### UC3: Get Personalized Recommendations
 
 - **Actors**: Guest Shopper, Logged-in Shopper
 - **Preconditions**: User is on home or product listing screen and either first-time user or chooses to update preferences.
@@ -228,7 +270,9 @@ UC3: Get Personalized Recommendations
   **A1**: User quits quiz midway → System keeps previous / default preference set and updates only based on completed answers.
 - **Postconditions**: The Recommendations given have to match the user's explicitly stated preferences.
 
-UC4: Save Session & Prompt Registration
+___
+
+#### UC4: Save Session & Prompt Registration
 
 - **Actors**: Guest Shopper
 - **Preconditions**: The current user has at least interacted with five products during the ongoing session.
@@ -245,7 +289,9 @@ UC4: Save Session & Prompt Registration
   **A1**: User says no to registration → The system remains in guest mode and reprompts the user again only once per session.
 - **Postconditions**: Registered users have their sessions stored after visits and can store their favorite products and preferences.
 
-UC5: Scan Product Barcode
+___
+
+#### UC5: Scan Product Barcode
 
 - **Actors**: Guest Shopper, Logged-in Shopper
 - **Preconditions**: User is in possession of a physical product with a scannable barcode and is on either the home or the catalog screen.
@@ -279,7 +325,72 @@ UC5: Scan Product Barcode
 | **FR6**  | Personalization filters                        | Must     |
 | **FR7**  | Personalized User Experiences (Question List)  | Must     |
 
-## 7. Wireframe References
+## 7. Wireframe
+
+<div align="center">
+<img src="./img/mockup/landing_screen.png" width=200px>
+</div>
+
+**Landing Screen**
+
+The initial view after scanning the in-store QR code. Upon launching the app, users are greeted by the Wine & Cheese icon, select their language (EN/FR) and click on Get started to start the Progressive Web App, without installation.
+___
+
+<div align="center">
+<img src="./img/mockup/qr.png" width=200px>
+</div>
+
+**Preference Selection (QR) Screen**
+
+An optional quiz step where users tap on tags (e.g. "Gruyère cheese", "Pinot Noir wine") to indicate their favorite cheeses and wines. Selections tailor all subsequent recommendations to individual tastes.
+___
+
+<div align="center">
+<img src="./img/mockup/home.png" width=200px>
+</div>
+
+**Home Screen**
+
+Custom hub where users see a featured-pairings carousel ("Pinot Noir"), swipe through "Most popular" and "Quick pairings", and tap category icons (Reds, Whites, Soft, Hard) to directly access curated wine & cheese combinations.
+
+___
+
+<div align="center">
+<img src="./img/mockup/pairing_explorer.png" width=200px>
+</div>
+
+**Perfect Pairings Screen**
+
+Displays the top matched wine & cheese pairing (hero image + title), with two calls-to-action—**Recommande** for expert suggestions or **Explore** for deeper browsing.
+
+___
+
+<div align="center">
+<img src="./img/mockup/search.png" width=200px>
+</div>
+
+**Search & Filters Screen**
+
+A filter panel letting users narrow pairings by Type, Color (Red/White/Rosé), Price range slider, Region, Aroma, and a visual **Taste profile** selector. Hit **Show pairings** to view results that match your criteria.
+___
+
+<div align="center">
+<img src="./img/mockup/barcode_scanner.png" width=200px>
+</div>
+
+**Barcode Scanner**
+
+Turns on your camera and prompts you to align the product’s EAN/UPC code within the red-framed window. On a successful scan, you’re taken straight to that product’s detail page.
+
+___
+
+<div align="center">
+<img src="./img/mockup/magic_link.png" width=200px>
+</div>
+
+**Magic Link Login**
+
+A password-less sign-in form: enter your email and tap **Get Magic Link**. You’ll receive a one-time link to authenticate instantly, enabling you to save preferences, session history, and favorites.
 
 ## 8. High-level database architecture
 
