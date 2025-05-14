@@ -159,8 +159,9 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 ### 5.1 Audience
 
-<div align="center" >
-Persona 1: Sam the Tourist (Guest Shopper)
+#### Persona 1: Sam the Tourist (Guest Shopper)
+
+<div align="center">
 <img src="./img/persona/persona_1.png" width=250px>
 </div>
 
@@ -174,7 +175,9 @@ Persona 1: Sam the Tourist (Guest Shopper)
 
 ___
 
-<div align="center" >
+#### Persona 3: Jean the Enthusiast (Power User)
+
+<div align="center">
 Persona 2: Claire the Local Foodie (Logged-In Shopper)
 <img src="./img/persona/persona_2.png" width=250px>
 </div>
@@ -189,8 +192,9 @@ Persona 2: Claire the Local Foodie (Logged-In Shopper)
 
 ___
 
-<div align="center" >
-Persona 3: Jean the Enthusiast (Power User)
+#### Persona 3: Jean the Enthusiast (Power User)
+
+<div align="center">
 <img src="./img/persona/persona_3.png" width=250px>
 </div>
 
