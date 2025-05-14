@@ -4,6 +4,9 @@
 | ----------- | ---------------- |
 | NOGUES Loic | Technical Leader |
 ## Table of Contents
+
+<details>
+
 - [Technical Specification](#technical-specification)
   - [Author](#author)
   - [Table of Contents](#table-of-contents)
@@ -44,6 +47,8 @@
       - [**Responsive Design**](#responsive-design)
       - [**Product Database**](#product-database)
       - [**User Preferences**](#user-preferences)
+  
+</details>
 
 ## 1.Project Summary
 __Conseil Intermarché__ is a web app solution for customers, it help them by giving recommendation for now only on cheese and wine. It will also allow product to be scan, multiple language will be supported by the wep app and the web app provides a personalized experience for users. We will use Bubble to make Conseil Intermarché.
