@@ -410,6 +410,16 @@ A password-less sign-in form: enter your email and tap **Get Magic Link**. Youâ€
 
 ___
 
+<div align="center">
+<img src="./img/mockup/product.png" width=200px>
+</div>
+
+**Product**
+
+A product page with a hero card showing an image, pairing name, description, vintage, price and an "Add to Favourite" button, followed by horizontal carousels for "Discover Pairing" and "Discover Similar Pairings" and a persistent bottom navigation bar for Home, Search and Shopping.
+
+___
+
 ## 8. High-level database architecture
 
   **Option Sets:**
