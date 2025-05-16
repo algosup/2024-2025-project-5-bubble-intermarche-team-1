@@ -69,7 +69,7 @@
 
 ### 1.1 Purpose
 
-Create and implement a very easy-to-use, bilingual, and progressive online application that can be accessed using a QR code at the store's entry. The objective is to increase sales and improve the shopping experience for visitors in the wine and cheese sections.
+Create and implement a very easy-to-use, bilingual, and progressive online application that can be accessed using a QR code at the store's entrance. The objective is to increase sales and improve the shopping experience for visitors in the wine and cheese sections.
 
 ### 1.2 Scope of Functional Specifications
 
@@ -119,7 +119,7 @@ Reduce product decision time to under 30 seconds, increase cross-sell rate by 15
 
 ### 2.3 Success Criteria
 
-- 20% uplift in average cart size from wine/cheese sections
+- 20% uplift in average cart size from wine and cheese sections
 - Positive user satisfaction feedback ≥4/5
 
 ___
@@ -128,12 +128,12 @@ ___
 
 #### In-Scope Features
 
-  - Personalized user experiences (UI/UX) through question list.
-  - Display high resolution product images.
+  - Personalized user experiences (UI/UX) through a question list.
+  - Display high-resolution product images.
   - Hidden feedback to enhance recommendation.
   - Recommended pairings and recipe suggestions.
   - Bilingual UI (minimum language : EN and FR).
-  - Search engine for product.
+  - Search engine for products.
   - User authentication through SMS/EMAIL magic link.
   - Barcode/EAN scanning via device camera that will redirect to the product page.
 
@@ -158,8 +158,8 @@ ___
 | Role        | Scan Products | View Details | Apply Filters | Update Top-100 List | Save Own Experiences | Give Product Feedback |
 |-------------|---------------|--------------|---------------|---------------------|----------------------|-----------------------|
 | Shopper     | ✔️            | ✔️           | ✔️            | ✖️                 | ✖️                 | ✖️                   |
-| Shopper LI  | ✖️            | ✖️           | ✖️            | ✔️                 | ✔️                 | ✔️                   |
-| Store Staff | ✖️            | ✖️           | ✖️            | ✔️                 | ✖️                 | ✖️                   |
+| Shopper LI  | ✔️            | ✔️           | ✔️            | ✖️                 | ✔️                 | ✔️                   |
+| Store Staff | ✔️            | ✔️           | ✔️            | ✔️                 | ✔️                 | ✔️                   |
 
 ___
 
@@ -478,16 +478,16 @@ ___
 
 - HTTPS/TLS for all requests and responses
 - Data that is very sensitive should be encrypted e.g. tokens, etc.
-- Send out limited-time-use magic-link tokens that are secure and which can only be used once
-- Allow access to the system only for users who have the relevant role and make sure that each input is valid
+- Send out limited-time-use magic-link tokens that are secure and can only be used once
+- Allow access to the system only for users who have the relevant role and ensure that each input is valid.
 
 ___
 
 ## 10. Business Rules
 
-- Our only concern is the wine and cheese.
+- Our only concern is wine and cheese.
 - Personalization updates only after user interaction (quiz, click, like)
-- Always honor the users selected language for UI and content
+- Always honor the user's selected language for UI and content
 
 ___
 
