@@ -13,7 +13,7 @@
 |    28/04/2025    | Creation of the document |
 |    30/04/2025    | Started filling section  |
 |    05/05/2025    | Added stakeholder & success criteria. |
-|    11/05/2025    | Completed the entire document (only mockup need to be finished) |
+|    11/05/2025    | Completed the entire document (only mockup needs to be finished) |
 |    13/05/2025    | Reworked and enhanced several parts. |
 |    14/05/2025    | Final version (waiting for QA verification) |
 
@@ -73,7 +73,7 @@ Create and implement a very easy-to-use, bilingual, and progressive online appli
 
 ### 1.2 Scope of Functional Specifications
 
-Covers all in-scope features including product lookup, recommendations, bilingual UI, and QR-code access. Excludes native apps, full backend/admin interface, offline capability, barcode scanning and integration beyond top-100 products.
+Covers all in-scope features including product lookup, recommendations, bilingual UI, and QR-code access. Excludes native apps, full backend/admin interface, offline capability, barcode scanning, and integration beyond top-100 products.
 
 ### 1.3 Definitions & Acronyms
 
@@ -130,17 +130,17 @@ ___
 
   - Personalized user experiences (UI/UX) through a question list.
   - Display high-resolution product images.
-  - Hidden feedback to enhance recommendation.
+  - Hidden feedback to enhance recommendations.
   - Recommended pairings and recipe suggestions.
   - Bilingual UI (minimum language : EN and FR).
   - Search engine for products.
   - User authentication through SMS/EMAIL magic link.
   - Barcode/EAN scanning via device camera that will redirect to the product page.
 
-#### Out-Scope Features
+#### Out-Of-Scope Features
 
-  - Admin panel to add, modify or delete product.
-  - Native app (available on play store and apple store) / Shortcut app.
+  - Admin panel to add, modify or delete products.
+  - Native app (available on Play store and Apple store) / Shortcut app.
   - Integration beyond top-100 product.
 
 ___
@@ -211,7 +211,7 @@ ___
 
 **Goals**: Dive deep into origin, style and intensity data compare products and save favorites for future visits.
 
-**Frustrations**: Slow or inaccurate barcode scans and limited filtering options or lack of high-resolution images.
+**Frustrations**: Slow or inaccurate barcode scans and limited filtering options or a lack of high-resolution images.
 
 ___
 
@@ -377,7 +377,7 @@ ___
 
 **Perfect Pairings Screen**
 
-Displays the top matched wine & cheese pairing (hero image + title), with two calls-to-action—**Recommande** for expert suggestions or **Explore** for deeper browsing.
+Displays the top matched wine & cheese pairing (hero image + title), with two calls-to-action—**Recommend** for expert suggestions or **Explore** for deeper browsing.
 
 ___
 
