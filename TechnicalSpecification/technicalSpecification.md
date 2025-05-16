@@ -37,6 +37,7 @@
       - [**NoCode**](#nocode)
       - [**Web App**](#web-app)
       - [**QR Code**](#qr-code)
+      - [**FireBase**](#firebase)
       - [**EAN Code**](#ean-code)
       - [**ITM8**](#itm8)
       - [**BarCode Scanner Plugin**](#barcode-scanner-plugin)
@@ -50,7 +51,7 @@
 </details>
 
 ## 1.Project Summary
-__Conseil Intermarché__ is a web app solution for customers, it help them by giving recommendation for now only on cheese and wine. It will also allow product to be scan, multiple language will be supported by the wep app and the web app provides a personalized experience for users. We will use Bubble to make Conseil Intermarché.
+__Conseil Intermarché__ is a web app solution for customers, it help them by giving recommendation for now only on cheese and wine. It will also allow product to be scan. Multiple language will be supported by the wep app and the web app provides a personalized experience for users. We will use Bubble to make Conseil Intermarché.
 ## 2.Technical Requirements
 __Programing Language__ : NoCode will be use for this project.
 
@@ -68,7 +69,7 @@ __Products__ All the products of the web app has been given by the client with t
 **Target Users:** General public, including foreign tourists  
 ## 3 Styles
 The style we will use are mainly the __red__,__black__ and __white__.
-Because they are the main colors of the intermarché logo and theme.
+Because they are the main colors of the Intermarché logo and theme.
 ## 4.Features 
 ### 4.1 Language Selection
 You will be able to choose between __French__ and __English__. We will use the __Option Set__ to translate into __English__ and __French__.
@@ -78,7 +79,7 @@ You will be able to choose between __French__ and __English__. We will use the _
 There will be a total of 3 to 5 questions about what the customer likes about wine tastes, cheese texture etc. The user have the prossibilty to skip those questions if he want to directly access the web app. The answer will be saved in the local data.
 Also there will be a next and previous button and a skip button if you don't want to respond to the questions.
 #### 4.2.2 Dynamic Interface
-The web app will give the user an __unique interface__ based on the local data of the user. Each web app interface will be different if the answers are not the same. In the __HomePage__ the preferences will be based on the previous questions the user answered 
+The web app will give the user an __unique interface__ based on the local data of the user. Each web app interface will be different if the answers are not the same. In the __HomePage__ the preferences will be based on the previous questions the user answered.
 
 ### 4.3 Scan
 You will be able to scan the barcode of the product. The web app will shows the description and recommend other merchandise that is good with the scanned product. To make it work, we will use a pluging called __BarCode Scanner__ that we can add on Bubble.
@@ -90,25 +91,25 @@ The plugin will be added.
 To allow occasional follow-up, promotions, or sending pairing guides via email, we’re adding a __Magic Link__ system. This feature lets users input their name and email or phone number, and receive a personal link to revisit their wine/cheese suggestions or pairing history.
 
 #### 4.4.1 How It Works
-User browses the app normally. At any point, they can tap “Save and Send Link”, after a short form appears to collect name and contact (email). Bubble generates a unique URL tied to their browsing session or preferences. Finnaly this link is sent to them automatically. When they reopen it, their saved pairings are restored instantly.
+User browses the app normally. At any point, they can tap the button “Save and Send Link”, after a short form appears to collect name and contact (email). Bubble generates a unique URL tied to their browsing session or preferences. Finnaly this link is sent to them automatically. When they reopen it, their saved pairings are restored instantly.
 
 ## 5.DataBase
 ### 5.1 Product
 
 #### 5.1.1 Data Management Of Products
 
-The core dataset includes two main categories of products: wines and cheeses. Each product has a name, description in both French and English, a price (sourced either from Intermarché’s internal base or direct suppliers), and a classification into subcategories such as "red wine", "soft cheese", etc. Fromages often have pricing by weight (per kilogram), and units sold may vary significantly (e.g., full wheels vs. small portions), so this distinction must be managed clearly in the database.
+The core dataset includes two main categories of products: wines and cheeses. Each product has a name, description, a price (sourced either from Intermarché’s internal base or direct suppliers), and a classification into categories such as "red wine"and subcartegories like "soft cheese", etc. Fromages often have pricing by weight (per kilogram), and units sold may vary significantly (e.g., full wheels vs. small portions), so this distinction must be managed clearly in the database.
 
-Each product also includes a reference code (ITM8), a barcode (EAN), and a location tag to reflect its physical placement in the store’s layout. The store uses Zebra devices to track barcode positioning, which can be used to support future in-store geolocation features.
+Each product also includes a reference code (ITM8), a barcode (EAN), and a location tag to reflect its physical placement in the store. Also the barcode (EAN) will serve as an ID for products
 
-The product database will be imported from curated Excel files for best-selling wines and cheeses, cleaned and structured in Bubble’s database. Pairing data between wine and cheese will be managed separately and can be generated manually or algorithmically based on sales data and predefined flavor compatibility rules.
+The product database will be done on a database site named __FireBase__, there is a pluging that can be use for that. We will use that because it is more efficent that doing it one by one on bubble. 
+
+The __Product__ database I will be use only for the the pages where there is only wine or cheese. The recommandation system will be base on "likes" by the users. More likes a product have, more it will be recommanded
 
 | Field Name          | Type   |
 | ------------------- | ------ |
-| name\_fr            | text   |
-| name\_en            | text   |
-| description\_fr     | text   |
-| description\_en     | text   |
+| name                | text   |
+| description         | text   |
 | category            | text   |
 | subcategory         | text   |
 | itm8\_ref           | text   |
@@ -122,18 +123,26 @@ The product database will be imported from curated Excel files for best-selling 
 | popularity\_score   | number |
 | added\_date         | date   |
 
-### 5.3 Pairing  
+
+### 5.3 Pairing 
+
+This database will also be done on the site __Firebase__
+
+The __Pairing__ database will be use for a certain product page. It will be done with looking up what's a good pairing or not. The recommandation will be done by us.
 
 | Field Name | Type    |
 | ---------- | ------- |
 | wine       | Product |
 | cheese     | Product |
-| score      | number  |
 | notes\_fr  | text    |
 | notes\_en  | text    |
-
+| score      | number  |
 
 ### 5.4 User
+
+The __Question page__ will be use for putting recommandation of what the user answered in the home page. So the first wine and cheese he likes 
+will be recommanded on the page.
+
 | Field Name    | Type             |
 | ------------- | ---------------- |
 | cheesestrengh | list             |
@@ -143,40 +152,42 @@ The product database will be imported from curated Excel files for best-selling 
 | winestyle     | list             |
 | winetype      | list             |
 | email         | text             |
-| modified date | date             |
+| modified date | date             |  
 | created date  | date             |
 | slug          | text             |
  
  ## 6.Technical Constraints
 
-The app will be built entirely on Bubble.io, with structured data types including `Product`, `Pairing`, and `UserSession`. The system must not rely on native mobile installation. The application should function in a browser environment using responsive design principles, and should preload essential data to ensure it functions offline. All media (images, labels) should be optimized for performance. Bubble's built-in logic and plugin ecosystem (such as barcode scanning support) will be leveraged to handle product recognition and conditional recommendations.
+The app will be built entirely on Bubble.io, with structured data types including `Product`, `Pairing`, and `User`. The system must not rely on native mobile installation. The application should function in a browser environment using responsive design principles, and should preload essential data to ensure it functions offline. All media (images, labels) should be optimized for performance. Bubble's built-in logic and plugin ecosystem (such as barcode scanning support) will be leveraged to handle product recognition and conditional recommendations.
 
 ## 7. Integration
-Photos and product descriptions may be sourced directly from Intermarché’s public product catalog. The Champagne and cider categories may be added as an extension of the wine dataset if required.
+Photos, product descriptions and the price will be sourced directly from the document that Intermarché send us. The Champagne and cider categories may be added as an extension of the wine dataset if required.
 
 ## 8. Supported Browsers
 ### 8.1 Browser Support Summary
-Base on the __Bubble docs__, it is supported on:
+Base on the __Bubble documention__, supported browsers will be :
 - Safari
 - Edge
 - Firefox
 - Chrome
 - Brave
 
-Also we encourage the users to update their browsers to the lastest version.
+Also they advice to always keep those browsers updated to dodge problem with the user usage of a bubble webapp
 
 ### 8.2 Edit-Mode
-The __edit-mode__ is the developer interface to make apps or webapp
-Also base on the __Bubble docs__, it is supported on:
+The __edit-mode__ is the developer interface to make apps or webapps.
+Also base on the __Bubble documetion__, the browses are also supported on:
 - Safari
 - Edge
 - Firefox
 - Chrome
 - Brave
+  
+Again we will have to keep the browser updated to not encounter problems with the saving of our modification for the product.
 
 ## 9. Future Improvement 
 If the demo proves successful and has a measurable impact on sales, the project may be expanded to other Intermarche locations. Also we can add more type products like beef, fish, bakery and more.
-Maybe the fact to add some client's feedbacks on certain product to have more accurate pairing options.
+Maybe the fact to add some client's feedbacks on certain product to have a more accurate pairing option. There is a Bubble functionnality can convert the webapp into a app that is on the __App store__ for apple phones or in __Google play__ for android phones. Finnally of other languages can be added for the future for more people that are visiting the webapp in France.
 
 ## 10. Glossary 
 
@@ -191,6 +202,9 @@ An application accessed via a browser on phones or computers — no installation
 
 #### **QR Code**
 A scannable code placed at the store entrance to quickly access the app.
+
+#### **FireBase**
+The Firebase Realtime Database is a cloud-hosted NoSQL database that lets organizations store and sync data in real time across all of their users' devices. This makes it easy to build apps that are always up to date, even when users are offline. 
 
 #### **EAN Code**
 A barcode used to identify products like cheese or wine.
