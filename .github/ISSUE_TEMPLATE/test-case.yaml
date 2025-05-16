@@ -1,0 +1,73 @@
+name: "Test Case"
+description: "Template for creating a new test case for the project."
+title: "[TEST CASE] <Short description of the test>"
+labels: ["test case"]
+assignees: []
+body:
+  - type: input
+    id: test_case_id
+    attributes:
+      label: "Test Case ID"
+      description: "Unique identifier for this test case (e.g., TC-001)"
+      placeholder: "TC-001"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "Short, descriptive title for the test case"
+      placeholder: "User can log in with valid credentials"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Detailed description of what this test case covers"
+      placeholder: "This test verifies that a user can log in with valid credentials."
+    validations:
+      required: true
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: "Preconditions"
+      description: "Any setup or conditions that must be met before running this test"
+      placeholder: "User is registered and has valid credentials."
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Test Steps"
+      description: "Step-by-step instructions to execute the test"
+      placeholder: |
+        1. Go to the login page.
+        2. Enter valid username and password.
+        3. Click the login button.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: "Expected Result"
+      description: "What should happen if the test passes?"
+      placeholder: "User is redirected to the dashboard."
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "Any additional notes or information"
+      placeholder: "Applicable for regression testing."
+    validations:
+      required: false
+
+
