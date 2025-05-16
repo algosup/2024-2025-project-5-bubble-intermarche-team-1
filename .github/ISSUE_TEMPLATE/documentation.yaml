@@ -1,0 +1,50 @@
+name: "Documentation Issue"
+description: "Report a problem or suggest an improvement for the documentation (e.g., typos, unclear sections, missing info)."
+title: "[DOC] "
+labels: ["documentation"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation Issue Report
+
+        Please use this template to report issues or suggest improvements related to the documentation.
+
+  - type: input
+    id: location
+    attributes:
+      label: "Location"
+      description: "Where did you find the issue? (File name, section, or link)"
+      placeholder: "e.g., README.md, Installation section"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Describe the problem"
+      description: "What is wrong or unclear? (e.g., typo, outdated info, missing details)"
+      placeholder: "Describe the issue here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Suggested fix or improvement"
+      description: "How would you fix or improve the documentation?"
+      placeholder: "Suggest a correction or improvement..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Confirmation"
+      options:
+        - label: "I have checked that this issue is not already reported."
+          required: true
+
+
+
