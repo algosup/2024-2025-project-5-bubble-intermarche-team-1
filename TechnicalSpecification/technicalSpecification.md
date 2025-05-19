@@ -51,28 +51,29 @@
 </details>
 
 ## 1.Project Summary
-__Conseil Intermarché__ is a web app solution for customers, it help them by giving recommendation for now only on cheese and wine. It will also allow product to be scan. Multiple language will be supported by the wep app and the web app provides a personalized experience for users. We will use Bubble to make Conseil Intermarché.
+__Conseil Intermarché__ is a web app solution for customers, it helps them by giving recommendation for only on cheese and wine for now. It will also allow product to be scan. Multiple language will be supported by the wep app and __Conseil Intermarché__ provides a personalized experience for users. We will use __Bubble Editor__ and __FireBase__ for the data to make Conseil Intermarché.
 ## 2.Technical Requirements
 __Programing Language__ : NoCode will be use for this project.
 
-__Supported Devices__ : The devices that will be supported will mostly be the smartphone and also computers.
+__Supported Devices__ : The devices that will be supported will mostly be the smartphone. It will be also supported on computers
 
-__Supported Languages__ : The two most important one are French and English.
+__Supported Languages__ : Conseil Intermarché will be translated in __English__ and __French__
 
 __An Easy Access And Interface__ : To access the web app, there will be a QR code at the entry of the store. Also the interface will be very intuitive using blocks and sections like (wine, cheese etc).
 
-__Products__ All the products of the web app has been given by the client with the __ITM8__ and the __EAN__. There is also the prices, the quantities and the price/kg.
+__Products__: All the products of the web app has been given by the client with the __ITM8__ and the __EAN__. There is also the prices, the quantities and the price/kg.
+
 **Project:** Wine & Cheese Recommendation Web App  
 
 **Client:** Intermarché Saint-Rémy-de-Provence  
 
-**Target Users:** General public, including foreign tourists  
 ## 3 Styles
-The style we will use are mainly the __red__,__black__ and __white__.
+The style we will use are mainly the __red__, __black__ and __white__.
 Because they are the main colors of the Intermarché logo and theme.
+![](images/Logo.jpg)
 ## 4.Features 
 ### 4.1 Language Selection
-You will be able to choose between __French__ and __English__. We will use the __Option Set__ to translate into __English__ and __French__.
+You will be able to choose between __French__ and __English__. We will put new fields in the database to translate in __English__ and in __French__.
 
 ### 4.2 Personalized Interface
 #### 4.2.1 Preferences of users
@@ -104,12 +105,17 @@ Each product also includes a reference code (ITM8), a barcode (EAN), and a locat
 
 The product database will be done on a database site named __FireBase__, there is a pluging that can be use for that. We will use that because it is more efficent that doing it one by one on bubble. 
 
-The __Product__ database I will be use only for the the pages where there is only wine or cheese. The recommandation system will be base on "likes" by the users. More likes a product have, more it will be recommanded
+![](<images/API firebase.png>)
+
+The __Product__ database I will be use only for the the pages where there is only wine or cheese. The recommandation system will be base on "likes" by the users. More likes a product have, more it will be recommanded. If there is no "likes" the recommandation will be based at the start with the 10 most sold wines and cheeses.
+
+Finally, the way we will find all the images will be by searching on the internet and find everything we want. 
 
 | Field Name          | Type   |
 | ------------------- | ------ |
 | name                | text   |
-| description         | text   |
+| description_fr      | text   |
+| description_en      | text   |
 | category            | text   |
 | subcategory         | text   |
 | itm8\_ref           | text   |
@@ -158,7 +164,7 @@ will be recommanded on the page.
  
  ## 6.Technical Constraints
 
-The app will be built entirely on Bubble.io, with structured data types including `Product`, `Pairing`, and `User`. The system must not rely on native mobile installation. The application should function in a browser environment using responsive design principles, and should preload essential data to ensure it functions offline. All media (images, labels) should be optimized for performance. Bubble's built-in logic and plugin ecosystem (such as barcode scanning support) will be leveraged to handle product recognition and conditional recommendations.
+The database will be created on __Bubble.io__ and __FireBase__ with structured data types including `Product`, `Pairing`, and `User`. The system must not rely on native mobile installation. The application should function in a browser environment using responsive design principles, and should preload essential data to ensure it functions offline. All media (images, labels) should be optimized for performance. Bubble's built-in logic and plugin ecosystem (such as barcode scanning support) will be leveraged to handle product recognition and conditional recommendations.
 
 ## 7. Integration
 Photos, product descriptions and the price will be sourced directly from the document that Intermarché send us. The Champagne and cider categories may be added as an extension of the wine dataset if required.
@@ -186,7 +192,7 @@ Also base on the __Bubble documetion__, the browses are also supported on:
 Again we will have to keep the browser updated to not encounter problems with the saving of our modification for the product.
 
 ## 9. Future Improvement 
-If the demo proves successful and has a measurable impact on sales, the project may be expanded to other Intermarche locations. Also we can add more type products like beef, fish, bakery and more.
+If the demo proves successful and has a measurable impact on sales, the project may be expanded to other Intermarche locations. Also we can add more type of products like beef, fish, bakery and more.
 Maybe the fact to add some client's feedbacks on certain product to have a more accurate pairing option. There is a Bubble functionnality can convert the webapp into a app that is on the __App store__ for apple phones or in __Google play__ for android phones. Finnally of other languages can be added for the future for more people that are visiting the webapp in France.
 
 ## 10. Glossary 
