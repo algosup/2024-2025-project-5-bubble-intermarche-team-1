@@ -10,9 +10,12 @@
 - [Technical Specification](#technical-specification)
   - [Author](#author)
   - [Table of Contents](#table-of-contents)
+  - [Table of Contents](#table-of-contents-1)
   - [1.Project Summary](#1project-summary)
   - [2.Technical Requirements](#2technical-requirements)
-  - [3 Styles](#3-styles)
+  - [3 Styles and Pages](#3-styles-and-pages)
+    - [3.1 Styles](#31-styles)
+    - [3.2 Pages](#32-pages)
   - [4.Features](#4features)
     - [4.1 Language Selection](#41-language-selection)
     - [4.2 Personalized Interface](#42-personalized-interface)
@@ -21,18 +24,19 @@
     - [4.3 Scan](#43-scan)
     - [4.4 Superlink](#44-superlink)
       - [4.4.1 How It Works](#441-how-it-works)
-  - [5.DataBase](#5database)
-    - [5.1 Product](#51-product)
-      - [5.1.1 Data Management Of Products](#511-data-management-of-products)
-    - [5.3 Pairing](#53-pairing)
-    - [5.4 User](#54-user)
-  - [6.Technical Constraints](#6technical-constraints)
-  - [7. Integration](#7-integration)
-  - [8. Supported Browsers](#8-supported-browsers)
-    - [8.1 Browser Support Summary](#81-browser-support-summary)
-    - [8.2 Edit-Mode](#82-edit-mode)
-  - [9. Future Improvement](#9-future-improvement)
-  - [10. Glossary](#10-glossary)
+  - [5. Reusable Elements](#5-reusable-elements)
+  - [6.DataBase](#6database)
+    - [6.1 Product](#61-product)
+      - [6.1.1 Data Management Of Products](#611-data-management-of-products)
+    - [6.2 Pairing](#62-pairing)
+    - [6.3 User](#63-user)
+  - [7.Technical Constraints](#7technical-constraints)
+  - [8. Integration](#8-integration)
+  - [9. Supported Browsers](#9-supported-browsers)
+    - [9.1 Browser Support Summary](#91-browser-support-summary)
+    - [9.2 Edit-Mode](#92-edit-mode)
+  - [10. Future Improvement](#10-future-improvement)
+  - [11. Glossary](#11-glossary)
       - [**Bubble.io**](#bubbleio)
       - [**NoCode**](#nocode)
       - [**Web App**](#web-app)
@@ -61,7 +65,66 @@
       - [**Responsive Design**](#responsive-design-1)
       - [**Product Database**](#product-database-1)
       - [**User Preferences**](#user-preferences-1)
-  
+
+- [Technical Specification](#technical-specification)
+  - [Author](#author)
+  - [Table of Contents](#table-of-contents)
+  - [Table of Contents](#table-of-contents-1)
+  - [1.Project Summary](#1project-summary)
+  - [2.Technical Requirements](#2technical-requirements)
+  - [3 Styles and Pages](#3-styles-and-pages)
+    - [3.1 Styles](#31-styles)
+    - [3.2 Pages](#32-pages)
+  - [4.Features](#4features)
+    - [4.1 Language Selection](#41-language-selection)
+    - [4.2 Personalized Interface](#42-personalized-interface)
+      - [4.2.1 Preferences of users](#421-preferences-of-users)
+      - [4.2.2 Dynamic Interface](#422-dynamic-interface)
+    - [4.3 Scan](#43-scan)
+    - [4.4 Superlink](#44-superlink)
+      - [4.4.1 How It Works](#441-how-it-works)
+  - [5. Reusable Elements](#5-reusable-elements)
+  - [6.DataBase](#6database)
+    - [6.1 Product](#61-product)
+      - [6.1.1 Data Management Of Products](#611-data-management-of-products)
+    - [6.2 Pairing](#62-pairing)
+    - [6.3 User](#63-user)
+  - [7.Technical Constraints](#7technical-constraints)
+  - [8. Integration](#8-integration)
+  - [9. Supported Browsers](#9-supported-browsers)
+    - [9.1 Browser Support Summary](#91-browser-support-summary)
+    - [9.2 Edit-Mode](#92-edit-mode)
+  - [10. Future Improvement](#10-future-improvement)
+  - [11. Glossary](#11-glossary)
+      - [**Bubble.io**](#bubbleio)
+      - [**NoCode**](#nocode)
+      - [**Web App**](#web-app)
+      - [**QR Code**](#qr-code)
+      - [**FireBase**](#firebase)
+      - [**EAN Code**](#ean-code)
+      - [**ITM8**](#itm8)
+      - [**BarCode Scanner Plugin**](#barcode-scanner-plugin)
+      - [**Magic Link**](#magic-link)
+      - [**Local Data**](#local-data)
+      - [**Pairing**](#pairing)
+      - [**Responsive Design**](#responsive-design)
+      - [**Product Database**](#product-database)
+      - [**User Preferences**](#user-preferences)
+      - [**Bubble.io**](#bubbleio-1)
+      - [**NoCode**](#nocode-1)
+      - [**Web App**](#web-app-1)
+      - [**QR Code**](#qr-code-1)
+      - [**FireBase**](#firebase-1)
+      - [**EAN Code**](#ean-code-1)
+      - [**ITM8**](#itm8-1)
+      - [**Barcode Scanner Plugin**](#barcode-scanner-plugin-1)
+      - [**Magic Link**](#magic-link-1)
+      - [**Local Data**](#local-data-1)
+      - [**Pairing**](#pairing-1)
+      - [**Responsive Design**](#responsive-design-1)
+      - [**Product Database**](#product-database-1)
+      - [**User Preferences**](#user-preferences-1)
+
 </details>
 
 ## 1.Project Summary
@@ -82,10 +145,39 @@ __EAN__. There is also the prices, the quantities and the price/kg.
 
 **Client:** Intermarché Saint-Rémy-de-Provence  
 
-## 3 Styles
+## 3 Styles and Pages
+### 3.1 Styles
 The style we will use are mainly the __red__, __black__ and __white__.
 Because they are the main colors of the Intermarché logo and theme.
 ![](images/Logo.jpg)
+### 3.2 Pages
+There will be a total 5 pages :
+- Index / Menu Page
+
+      This is the menu of the web app. With a button get
+      started to start your journey on Conseil Intermaché
+
+- Question page
+    
+      Page where the user will be answering questions for 
+      there preferences.
+- Home Page
+
+      The home of the web app where the user can access
+      everything (Search Page and Product Page).
+- Search Page
+
+      This page is the made for the users to search the 
+      products he wants, with a search bar, filters etc.
+- Product Page
+
+      The page is for when the user click on a product or
+      scan the barcode of a wine or a cheese.
+      The purpose of this is for the user to have more 
+      information about a product. There will be also
+      recommandation with the best pairing between two 
+      aliments.
+
 ## 4.Features 
 ### 4.1 Language Selection
 You will be able to choose between __French__ and __English__. We will put new fields in the database to translate into __English__ and into __French__.
@@ -107,10 +199,20 @@ To allow occasional follow-up, promotions, or sending pairing guides via email, 
 #### 4.4.1 How It Works
 The user browses the app normally. At any point, they can tap the button “Save and Send Link”, after a short form appears to collect name and contact (email). Bubble generates a unique URL tied to their browsing session or preferences. Finally, this link is sent to them automatically. When they reopen it, their saved pairings are restored instantly.
 
-## 5.DataBase
-### 5.1 Product
+## 5. Reusable Elements
+To create a page in Bubble using reusable elements, first open the Bubble editor and navigate to the Design tab. In the left panel, locate the “Reusable elements” section and click “New reusable element.” Name your reusable component, for example “Header,” “Footer,” or “CardComponent,” and then design it using the same tools available for any group. You can add inputs, text, buttons, icons, workflows, or custom states.
 
-#### 5.1.1 Data Management Of Products
+Once the reusable element is created, go to the page where you want to use it. In the Design tab for that page, search for the reusable element by name in the elements panel and drag it into the page. The reusable element will appear as a single block that you can position like any other group. If the reusable element includes custom states or workflows, those will work wherever it's placed.
+
+To pass data into a reusable element, use the element's exposed inputs (if you’ve configured any). You can define custom data fields by clicking on the reusable element, going to the property editor, and setting the type of content. Inside the reusable element, you can reference “Parent group's [thing]” to access the passed data.
+
+Reusable elements are useful for maintaining consistency across your app. For example, a reusable header used on all pages can be updated in one place, and the change will propagate everywhere it's used. You can also nest reusable elements inside each other if needed.
+
+Finally, to handle workflows, open the reusable element directly and configure its internal logic as you would with any page or group. You can also trigger custom events inside the reusable element and expose them to be triggered from the main page using the “Trigger a custom event from reusable element” action.
+## 6.DataBase
+### 6.1 Product
+
+#### 6.1.1 Data Management Of Products
 
 The core dataset includes two main categories of products: wines and cheeses. Each product has a name, description, a price (sourced either from Intermarché’s internal base or direct suppliers), and a classification into categories such as "red wine" and subcategories like "soft cheese", etc. Fromages often have pricing by weight (per kilogram), and units sold may vary significantly (e.g., full wheels vs. small portions), so this distinction must be managed clearly in the database.
 
@@ -141,7 +243,7 @@ Finally, the way we will find all the images will be by searching on the interne
 | popularity\_score   | number |
 
 
-### 5.3 Pairing 
+### 6.2 Pairing 
 
 This database will also be done on the site __Firebase__
 
@@ -155,7 +257,7 @@ The __Pairing__ database will be use for a certain product page. It will be done
 | description\_en | text    |
 | score           | number  |
 
-### 5.4 User
+### 6.3 User
 
 The __Question page__ will be use as a base of recommandation of what the user answered. The result will be on the __Home page__ so the first wine and cheese he likes 
 will be recommanded on the page.
@@ -173,15 +275,15 @@ will be recommanded on the page.
 | created date  | date             |
 | slug          | text             |
  
- ## 6.Technical Constraints
+ ## 7.Technical Constraints
 
 The database will be created on __Bubble.io__ and __FireBase__ with structured data types including `Product`, `Pairing`, and `User`. The system must not rely on native mobile installation. The application should function in a browser environment using responsive design principles and should preload essential data to ensure it functions offline. All media (images, labels) should be optimized for performance. Bubble's built-in logic and plugin ecosystem (such as barcode scanning support) will be leveraged to handle product recognition and conditional recommendations.
 
-## 7. Integration
+## 8. Integration
 Photos, product descriptions, and the price will be sourced directly from the document that Intermarché sends us. The Champagne and cider categories may be added as an extension of the wine dataset if required.
 
-## 8. Supported Browsers
-### 8.1 Browser Support Summary
+## 9. Supported Browsers
+### 9.1 Browser Support Summary
 Base on the __Bubble documention__, supported browsers will be :
 - Safari
 - Edge
@@ -191,7 +293,7 @@ Base on the __Bubble documention__, supported browsers will be :
 
 Also, they advise to always keep those browsers updated to dodge problems with the user usage of a bubble web app.
 
-### 8.2 Edit-Mode
+### 9.2 Edit-Mode
 The __edit-mode__ is the developer interface to make apps or webapps.
 Also base on the __Bubble documetion__, the browses are also supported on:
 - Safari
@@ -203,12 +305,12 @@ Also base on the __Bubble documetion__, the browses are also supported on:
 Again, we will have to keep the browser updated so as not to encounter problems with the saving of our modifications for the product.
 
 
-## 9. Future Improvement 
+## 10. Future Improvement 
 If the demo proves successful and has a measurable impact on sales, the project may be expanded to other Intermarche locations. Also, we can add more types of products like beef, fish, bakery, and more.
 Maybe the fact of adding some client feedback on a certain product to have a more accurate pairing option. There is a Bubble functionality that can convert the webapp into an app that is on the __App Store__ for Apple phones or on __Google Play__ for Android phones. Finally of other languages can be added for the future for more people who are visiting the webapp in France.
 
 
-## 10. Glossary 
+## 11. Glossary 
 
 #### **Bubble.io**
 A no-code platform used to build the web app without traditional programming.
