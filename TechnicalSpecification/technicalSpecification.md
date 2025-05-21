@@ -90,7 +90,7 @@ __EAN__. There is also the prices, the quantities and the price/kg.
 ### 3.1 Styles
 The style we will use are mainly the __red__, __black__ and __white__.
 Because they are the main colors of the Intermarché logo and theme.
-![](images/Logo.jpg)
+![](<images/Logo.jpg>)
 ### 3.2 Pages
 There will be a total 5 pages :
 - Index / Menu Page
@@ -142,7 +142,7 @@ There will be a total 5 pages :
       The dislike will remove -1 on the pairing score.
 
 ### 3.3 Flow of the Webapp
-![](images\Flow.png)
+![](<images/Flow.png>)
 
       
 
