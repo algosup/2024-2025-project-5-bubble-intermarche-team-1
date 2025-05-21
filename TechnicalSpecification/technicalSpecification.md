@@ -135,13 +135,10 @@ Finally, the way we will find all the images will be by searching on the interne
 | itm8\_ref           | text   |
 | ean\_code           | text   |
 | price               | number |
-| is\_direct\_sale    | yes/no |
 | photo               | image  |
 | unit\_type          | text   |
-| average\_weight\_kg | number |
-| geo\_location       | text   |
+| average\_weight\_kg | number |  
 | popularity\_score   | number |
-| added\_date         | date   |
 
 
 ### 5.3 Pairing 
