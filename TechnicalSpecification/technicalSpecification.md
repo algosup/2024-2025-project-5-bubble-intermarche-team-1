@@ -10,71 +10,12 @@
 - [Technical Specification](#technical-specification)
   - [Author](#author)
   - [Table of Contents](#table-of-contents)
-  - [Table of Contents](#table-of-contents-1)
   - [1.Project Summary](#1project-summary)
   - [2.Technical Requirements](#2technical-requirements)
-  - [3 Styles and Pages](#3-styles-and-pages)
+  - [3 Styles, Pages, Flow.](#3-styles-pages-flow)
     - [3.1 Styles](#31-styles)
     - [3.2 Pages](#32-pages)
-  - [4.Features](#4features)
-    - [4.1 Language Selection](#41-language-selection)
-    - [4.2 Personalized Interface](#42-personalized-interface)
-      - [4.2.1 Preferences of users](#421-preferences-of-users)
-      - [4.2.2 Dynamic Interface](#422-dynamic-interface)
-    - [4.3 Scan](#43-scan)
-    - [4.4 Superlink](#44-superlink)
-      - [4.4.1 How It Works](#441-how-it-works)
-  - [5. Reusable Elements](#5-reusable-elements)
-  - [6.DataBase](#6database)
-    - [6.1 Product](#61-product)
-      - [6.1.1 Data Management Of Products](#611-data-management-of-products)
-    - [6.2 Pairing](#62-pairing)
-    - [6.3 User](#63-user)
-  - [7.Technical Constraints](#7technical-constraints)
-  - [8. Integration](#8-integration)
-  - [9. Supported Browsers](#9-supported-browsers)
-    - [9.1 Browser Support Summary](#91-browser-support-summary)
-    - [9.2 Edit-Mode](#92-edit-mode)
-  - [10. Future Improvement](#10-future-improvement)
-  - [11. Glossary](#11-glossary)
-      - [**Bubble.io**](#bubbleio)
-      - [**NoCode**](#nocode)
-      - [**Web App**](#web-app)
-      - [**QR Code**](#qr-code)
-      - [**FireBase**](#firebase)
-      - [**EAN Code**](#ean-code)
-      - [**ITM8**](#itm8)
-      - [**BarCode Scanner Plugin**](#barcode-scanner-plugin)
-      - [**Magic Link**](#magic-link)
-      - [**Local Data**](#local-data)
-      - [**Pairing**](#pairing)
-      - [**Responsive Design**](#responsive-design)
-      - [**Product Database**](#product-database)
-      - [**User Preferences**](#user-preferences)
-      - [**Bubble.io**](#bubbleio-1)
-      - [**NoCode**](#nocode-1)
-      - [**Web App**](#web-app-1)
-      - [**QR Code**](#qr-code-1)
-      - [**FireBase**](#firebase-1)
-      - [**EAN Code**](#ean-code-1)
-      - [**ITM8**](#itm8-1)
-      - [**Barcode Scanner Plugin**](#barcode-scanner-plugin-1)
-      - [**Magic Link**](#magic-link-1)
-      - [**Local Data**](#local-data-1)
-      - [**Pairing**](#pairing-1)
-      - [**Responsive Design**](#responsive-design-1)
-      - [**Product Database**](#product-database-1)
-      - [**User Preferences**](#user-preferences-1)
-
-- [Technical Specification](#technical-specification)
-  - [Author](#author)
-  - [Table of Contents](#table-of-contents)
-  - [Table of Contents](#table-of-contents-1)
-  - [1.Project Summary](#1project-summary)
-  - [2.Technical Requirements](#2technical-requirements)
-  - [3 Styles and Pages](#3-styles-and-pages)
-    - [3.1 Styles](#31-styles)
-    - [3.2 Pages](#32-pages)
+    - [3.3 Flow of the Webapp](#33-flow-of-the-webapp)
   - [4.Features](#4features)
     - [4.1 Language Selection](#41-language-selection)
     - [4.2 Personalized Interface](#42-personalized-interface)
@@ -145,7 +86,7 @@ __EAN__. There is also the prices, the quantities and the price/kg.
 
 **Client:** Intermarché Saint-Rémy-de-Provence  
 
-## 3 Styles and Pages
+## 3 Styles, Pages, Flow.
 ### 3.1 Styles
 The style we will use are mainly the __red__, __black__ and __white__.
 Because they are the main colors of the Intermarché logo and theme.
@@ -159,24 +100,51 @@ There will be a total 5 pages :
 
 - Question page
     
-      Page where the user will be answering questions for 
-      there preferences.
+      Right after the Menu Page the user will be answering 
+      questions for there preferences. 
+      The answers of the users will be on the user Data Base.
+      Also there will be a skip button for if the user 
+      doesn't want to answers questions. 
 - Home Page
 
-      The home of the web app where the user can access
+      The home of the web app where the user can access.
       everything (Search Page and Product Page).
-- Search Page
+      Recommandation based on the answers of the 
+      Questions Page. There will be a hotbar at the bottom
+      of the screen with a barcode, a search button and 
+      a possibilty to go back to the Home Page. 
+      Also there will be an access to the wines page and 
+      the cheese page.
+      To access those catalogs pages we will need to make
+      a button to go to these pages.
 
-      This page is the made for the users to search the 
-      products he wants, with a search bar, filters etc.
+- Wine/Cheese Page
+
+      This page is accessible by clicking on the wine or 
+      cheese button. 
+      This is made for searching which wine or cheese 
+      he wants with a search bar, filters etc.
+      To do display the products we will need the product
+      Database and repeating groups. To recommand the 
+      best wine, all the users can put a like on the 
+      products he likes. This will add a +1 on the product 
+      score.
+
 - Product Page
 
       The page is for when the user click on a product or
       scan the barcode of a wine or a cheese.
-      The purpose of this is for the user to have more 
-      information about a product. There will be also
-      recommandation with the best pairing between two 
-      aliments.
+      This where the user can likes the products.
+      Also there will be a pairing recommandation with the
+      product clicked. This will be based on the Pairing
+      Database and when clicked, a popup will appear
+      with the possibilty to like or dislike the pairing. 
+      The dislike will remove -1 on the pairing score.
+
+### 3.3 Flow of the Webapp
+![](images\Flow.png)
+
+      
 
 ## 4.Features 
 ### 4.1 Language Selection
@@ -395,3 +363,6 @@ Structured storage of wines and cheeses, including name, price, barcode, categor
 
 #### **User Preferences**
 Taste or texture options selected by users to generate custom recommendations.
+
+
+[def]: Flow.png
