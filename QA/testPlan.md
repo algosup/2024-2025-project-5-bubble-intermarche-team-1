@@ -2,9 +2,9 @@
 
 
 ## 1. Introduction
-During this project, we'll deliver an mobile application for Intermarché Saint-Rémy-de-Provence, who feature to guide customer ( especially the tourist one) to a catalogue of wine and cheese. 
-This software has the goal to propose the product to the customer on the most intuitive way as possible, propose pertinent product and overall improve the outcome of the of the Intermarché.
-On this test plan, we will describe the test strategy, objectives, scope, approach, resources, schedule and deliverables for the testing of the application.
+During this project, we'll deliver a mobile application for Intermarché Saint-Rémy-de-Provence, who feature to guide customers ( especially tourists) to a catalogue of wine and cheese. 
+This software has the goal to propose the product to the customer in the most intuitive way possible, propose a pertinent product, and overall improve the outcome of the Intermarché.
+On this test plan, we will describe the test strategy, objectives, scope, approach, resources, schedule, and deliverables for the testing of the application.
 The test plan will be used as a guide for the testing process and will be updated as necessary throughout the project lifecycle.
 
 ## 2. Objectives and Tasks
@@ -24,8 +24,8 @@ The scope of this test plan includes the testing of the mobile application for I
 - Usability testing: Evaluate the user interface and user experience of the application to ensure it is intuitive and easy to use.
 - Documentation quality check: Verify that the documentation is complete and accurate, including functional specification, technical specification, and user manual.
 - Compatibility testing: Verify that the application works on different devices and operating systems.
-- bug report: Verify that defects are reported and tracked effectively, and that they are resolved in a timely manner.
-- test case: Verify that test cases are executed and documented correctly, and that the results are reported accurately.
+- Bug report: Verify that defects are reported and tracked effectively, and that they are resolved in a timely manner.
+- Test case: Verify that test cases are executed and documented correctly, and that the results are reported accurately.
 - GitHub issue template will be used to report bugs and track defects.
 
 ## 4. Test Items
@@ -61,7 +61,7 @@ The test approach for this project will include the following steps:
 2. Identify the test items and features to be tested
 3. Develop test cases  based on the functional and technical specifications
 4. Execute the test cases and document the results
-5. Report and track defects using GitHub issue template
+5. Report and track defects using the GitHub issue template
 6. Verify that defects are resolved and retest as necessary
 7. Conduct usability testing to evaluate the user interface and user experience
 8. Conduct compatibility testing to verify that the application works on different devices and operating systems
@@ -72,21 +72,21 @@ The test approach for this project will include the following steps:
 The test deliverables for this project will include the following:
 - Test plan 
 - Test case
-- GitHub issue template for bug reporting, documenting defect and test cases.
+- GitHub issue template for bug reporting, documenting defects, and test cases.
 
 ## 9. Schedule
 The testing schedule will be aligned with the project timeline and will include the following milestones:
-- Test plan approval: [Date]
-- Test case development: [Date]
-- Test case execution: [Date]
+- Test plan approval: [06/06]
+- Test case development: [06/06]
+
 
 
 ## 10. Resources and Roles
 The resources and roles for this project will include the following:
-- Test manager: [Name] - responsible for overseeing the testing process and ensuring that the test plan is followed.
-- Testers: [Names] - responsible for executing the test cases and documenting the results.
-- Developers: [Names] - responsible for resolving defects and retesting as necessary.
-- Project manager: [Name] - responsible for overall project management and ensuring that the testing process is aligned with the project timeline.
+- Test manager: [QA] - responsible for overseeing the testing process and ensuring that the test plan is followed.
+- Testers: [QA] - responsible for executing the test cases and documenting the results.
+- Developers: [SE] - responsible for resolving defects and retesting as necessary.
+- Project manager: [PJM] - responsible for overall project management and ensuring that the testing process is aligned with the project timeline.
 
 ## 11. Environment Requirements
 The testing environment will include the following:
@@ -112,6 +112,8 @@ This test plan will be reviewed and approved by the project stakeholders, includ
 | Term | Definition |
 |------|------------|
 | QA   | Quality Assurance |
+| SE   | Software Engineer |
+| PJM  | Project Manager |
 | UI   | User Interface |
 | UX   | User Experience |
 | API  | Application Programming Interface |
@@ -133,4 +135,5 @@ This test plan will be reviewed and approved by the project stakeholders, includ
 | Test Data | The data used during testing to simulate real-world scenarios and verify the application's functionality. |
 | Test Environment | The hardware, software, and network configuration used for testing the application. |
 | Test Item | An item or feature that is subject to testing in the project. |
+
 
