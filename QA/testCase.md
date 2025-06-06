@@ -1,9 +1,8 @@
-# Test Case
 
 |id|test plan name|purpose|expected result|actual result|pass?|comments|
 |---|---|---|---|---|---|---|
-|1|Authentification|Verify that the application can handle user authentication and authorization.|The application should allow users to log in and access their accounts securely.| | | |
-|2|Language Support|Verify that the application supports multiple languages, including French and English.|The application should allow users to switch between French and English languages.| | | |
+|1| Authentication |Verify that the application can handle user authentication and authorization.|The application should allow users to log in and access their accounts securely.| | | |
+|2|Language Support|Verify that the application supports multiple languages, including French and English.|The application should allow users to switch between French and English.| | | |
 |3|Localization|Verify that the application can handle localization and formatting for different languages.|The application should display dates, numbers, and other localized content correctly based on the selected language.| | | |
 |4|Setting|Verify that the application can handle user preferences, such as language and theme settings.|The application should save and apply user preferences correctly.| | | |
 |5|User Friendly Interface|Verify that the user interface is intuitive and easy to navigate, with clear labels and instructions.|The application should have a user-friendly interface with clear navigation and instructions.| | | |
@@ -17,6 +16,3 @@
 |13|Recommendations|Verify that the application can handle product recommendations based on user preferences.|The application should display relevant product recommendations based on user preferences and past interactions.| | | |
 |14|Stress Performance|Verify that the application can handle large product data sets without performance issues.|The application should load and display a large number of products without significant delays or crashes.| | | |
 |15|HTPP Error Handle|Verify that the application can handle network connectivity issues gracefully.|The application should display an appropriate message when there is no network connectivity or when the server is unreachable.| | | |
-
-
-
