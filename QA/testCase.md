@@ -14,5 +14,3 @@
 |11|Search|Verify that the application allows users to search for products by name, category, or other criteria.|The application should return relevant search results based on user input.| | | |
 |12|Invalide Query|Verify that the application can handle user input errors, such as invalid search queries.|The application should display an appropriate message when the user enters an invalid search query.| | | |
 |13|Recommendations|Verify that the application can handle product recommendations based on user preferences.|The application should display relevant product recommendations based on user preferences and past interactions.| | | |
-|14|Stress Performance|Verify that the application can handle large product data sets without performance issues.|The application should load and display a large number of products without significant delays or crashes.| | | |
-|15|HTPP Error Handle|Verify that the application can handle network connectivity issues gracefully.|The application should display an appropriate message when there is no network connectivity or when the server is unreachable.| | | |
