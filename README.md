@@ -9,7 +9,7 @@ Welcome to "Conseil Intermarché" an interactive web application built to help y
 
 This project was created to be a simple and elegant resource for anyone looking to learn more about a specific wine or cheese. It answers questions like "What does this wine taste like?", "Where does this cheese come from?", and most importantly, "What goes well with this?"
 
-This application was built entirely without code using the [Bubble.io](https://bubble.io) platform, demonstrating the power of visual development for creating rich, data-driven web apps.
+This application was built entirely with no code using the [Bubble.io](https://bubble.io) platform, demonstrating the power of visual development for creating rich, data-driven web apps.
 
 ---
 
