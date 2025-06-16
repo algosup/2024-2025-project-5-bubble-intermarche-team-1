@@ -1,4 +1,4 @@
-# Poject 5/ Team 1: Bubble Intermarche 
+# Project 5/ Team 1: Bubble Intermarche 
 # Conseil Intermarché
 
 Welcome to "Conseil Intermarché" an interactive web application built to help you choose and inform the users about wine and cheese. Whether you're a seasoned connoisseur or just starting your journey, this app will help you find detailed information and discover delicious pairings.
