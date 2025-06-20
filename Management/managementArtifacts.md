@@ -160,4 +160,5 @@ You can directly access the reports individually:
 - [Weekly Report 6](weeklyReports/weeklyReport6.md)
 - [Weekly Report 7](weeklyReports/weeklyReport7.md)
 - [Weekly Report 8](weeklyReports/weeklyReport8.md)
+- [Weekly Report 9](weeklyReports/weeklyReport9.md)
 
