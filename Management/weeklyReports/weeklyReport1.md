@@ -23,7 +23,7 @@ This week marked the beginning of our project with a strong focus on the kick-of
 ### Ratings
 
 - **Communication:** 8.0
-- **Management:** 7.25
+- **Management:** 7.2
 - **Motivation:** 8.0
 - **Productivity:** 8.0
 

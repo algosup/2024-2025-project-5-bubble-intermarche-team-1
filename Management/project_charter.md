@@ -156,5 +156,6 @@ The aim is to **boost wine and cheese sales**, improve user experience for inter
 * **Budget:** None (demo only)
 * **Team Size:** 6 people
 
+You can access the team attendance and total work hours by person [here](https://docs.google.com/spreadsheets/d/19FjfxPBIcVtC0Fanfg4dfwFj8DDl5QzXokSrA09VT9M/edit?usp=sharing).
 
 

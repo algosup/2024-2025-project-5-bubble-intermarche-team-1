@@ -1,12 +1,12 @@
-# 📝 Kick-Off Meeting Summary – "Bubble" PWA for Intermarché Saint-Rémy-de-Provence
+# Kick-Off Meeting Summary – "Bubble" PWA for Intermarché Saint-Rémy-de-Provence
 
 On April 25, 2025, a kick-off meeting was held via Microsoft Teams to discuss the "Bubble" Progressive Web App (PWA) project for Intermarché Saint-Rémy-de-Provence. This meeting brought together key members from both the client and project teams to define objectives, expectations, and next steps.
 
-## 🎯 Objectives and Context
+## Objectives and Context
 
 The primary goal of this meeting was to ensure all stakeholders are aligned on the project's vision. The client aims to develop a bilingual PWA, accessible via a QR code at the store entrance, to enhance the shopping experience for foreign tourists in the wine and cheese aisles. This app aims to replicate the expertise of in-store employees and boost wine and cheese sales.
 
-## 👥 Attendees
+## Attendees
 
 The meeting included several key participants:
 
@@ -23,7 +23,7 @@ The meeting included several key participants:
   - Alexis SANTOS, Software Engineer
   - Michel RIFF, Technical Writer
 
-## 🗣️ Key Discussion Points
+## Key Discussion Points
 
 ### Client Requirements
 
@@ -53,16 +53,16 @@ Several key features were identified:
 
 The client requested the project team to propose a marketing strategy to support the app launch. The goal is to maximize user awareness and drive adoption both in-store and online.
 
-## ✅ Decisions and Next Steps
+## Decisions and Next Steps
 
 It was decided that the project will begin with creating mockups to validate the user experience and ensure features align with client expectations. The team will also familiarize themselves with Bubble.io to ensure technical feasibility.
 
 A feedback session with the client will be scheduled after the delivery of the first set of mockups, planned for May 5, 2025.
 
-## ⚠️ Risks and Open Questions
+## Risks and Open Questions
 
 There is a need to validate if all intended features are achievable with Bubble.io. There is also a risk of scope changes if client expectations are not fully aligned during the mockup approval stage.
 
-## 📅 Next Meeting
+## Next Meeting
 
 The next meeting will be scheduled after the client provides feedback on the mockups. The agenda will include reviewing the mockups and finalizing the functional and technical specifications based on the validated scope.
